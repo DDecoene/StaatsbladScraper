@@ -64,7 +64,7 @@ class CSVPipeline(object):
         return pipeline
 
     def spider_opened(self, spider):
-        file = open("{}_{}_{}_{}__{}_{}_{}.csv".format(spider.postkode,spider.pdda,spider.pddm,spider.pddj,spider.pdfa,spider.pdfm,spider.pdfj), 'w+b')
+        file = open("{}_{}_{}__{}_{}_{}.csv".format(spider.pdda,spider.pddm,spider.pddj,spider.pdfa,spider.pdfm,spider.pdfj), 'a+b')
         self.files[spider] = file
         kwargs = {}
         kwargs['delimiter'] = ';'
