@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Staatsbladscraper : Scrapy example with complex navigation">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Staatsbladscraper</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/AvidSoftware-be/StaatsbladScraper">View on GitHub</a>
+
+          <h1 id="project_title">Staatsbladscraper</h1>
+          <h2 id="project_tagline">Scrapy example with complex navigation</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/AvidSoftware-be/StaatsbladScraper/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/AvidSoftware-be/StaatsbladScraper/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="staatsbladscraper" class="anchor" href="#staatsbladscraper" aria-hidden="true"><span class="octicon octicon-link"></span></a>StaatsbladScraper</h1>
+
+<p>Scrapy example with complex navigation.</p>
+
+<p>Gets addresses from <a href="http://www.ejustice.just.fgov.be/tsv/tsvn.htm">http://www.ejustice.just.fgov.be/tsv/tsvn.htm</a> for new companies. This is a demonstration of the use of scrapy, not to use the scraped data as this could be a violation of the privacy laws.
+Every company that is not a sole proprietorship is published in the "Belgian Law Gazette" (Staatsblad). Because of the way the website is constructed it was a challenge to see if I could do it. This is the result.</p>
+
+<h1>
+<a id="setup" class="anchor" href="#setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup</h1>
+
+<p>Install the Python package 'virtualenv':</p>
+
+<pre><code>sudo pip install virtualenv
+</code></pre>
+
+<p>Create a virtual environment for Python libraries:</p>
+
+<pre><code>virtualenv venv
+</code></pre>
+
+<p>Activate the virtual environment:</p>
+
+<pre><code>source ./venv/bin/activate
+</code></pre>
+
+<p>Install the Python library dependencies of this repo:</p>
+
+<pre><code>pip install -r requirements.txt
+</code></pre>
+
+<p>Run the script:</p>
+
+<pre><code>python staatsblad_scaper.py -f 2015-06-01 -t 2015-06-17 testset_postcodes.csv
+</code></pre>
+
+<p>License: GNU Affero GPLv3 or later.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Staatsbladscraper maintained by <a href="https://github.com/AvidSoftware-be">AvidSoftware-be</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
