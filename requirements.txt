@@ -1,0 +1,16 @@
+cffi==1.1.2
+cryptography==0.9.1
+cssselect==0.9.1
+enum34==1.0.4
+idna==2.0
+ipaddress==1.0.7
+lxml==3.4.4
+pyasn1==0.1.7
+pycparser==2.14
+pyOpenSSL==0.15.1
+queuelib==1.2.2
+Scrapy==0.24.6
+six==1.9.0
+Twisted==15.2.1
+w3lib==1.11.0
+zope.interface==4.1.2
