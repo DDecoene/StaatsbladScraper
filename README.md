@@ -27,6 +27,8 @@ Install the Python library dependencies of this repo:
 Run the script:
 
     python staatsblad_scaper.py -f 2015-06-01 -t 2015-06-17 testset_postcodes.csv
+    
+License: GNU Affero GPLv3 or later.
 
 
 

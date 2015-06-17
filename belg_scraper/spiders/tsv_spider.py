@@ -1,5 +1,7 @@
-#Usage, ie:
-#   scrapy crawl tsv -a postkode=8800 -a van=2015-04-27  -a tot=2015-05-09
+
+#
+# This file is part of https://github.com/AvidSoftware-be/StaatsbladScraper, licensed under GNU Affero GPLv3 or later.
+#
 
 import scrapy
 from scrapy.contrib.spiders import CrawlSpider, Rule
