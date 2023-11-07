@@ -6,10 +6,8 @@
 import argparse
 import csv
 import sys
-import argparse
 import os
 
-from twisted.internet import reactor
 from scrapy.crawler import Crawler
 from scrapy import log, signals
 from belg_scraper.spiders.tsv_spider import tsvSpider
