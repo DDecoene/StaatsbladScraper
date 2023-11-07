@@ -4,14 +4,12 @@
 #
 
 import scrapy
-from scrapy.contrib.spiders import CrawlSpider, Rule
-from scrapy.contrib.linkextractors.lxmlhtml import LxmlLinkExtractor
-from scrapy.selector import HtmlXPathSelector
+from scrapy.spiders import CrawlSpider, Rule
+from scrapy.linkextractors.lxmlhtml import LxmlLinkExtractor
 from scrapy.utils.response import get_base_url
 from scrapy.http import FormRequest, Request
 import re
 from belg_scraper.items import BelgScraperItem
-import urlparse
 import datetime
 
 

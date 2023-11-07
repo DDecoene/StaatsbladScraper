@@ -9,7 +9,6 @@ import sys
 import os
 
 from scrapy.crawler import Crawler
-from scrapy import log, signals
 from belg_scraper.spiders.tsv_spider import tsvSpider
 from scrapy.utils.project import get_project_settings
 
@@ -30,11 +29,8 @@ def main(argv):
         d_to = args.todate
     if args.fromdate:
         d_from = args.fromdate
-
     
-   
-    
-    with open(inputfile, 'rb') as csvfile:
+    with open(inputfile, 'r') as csvfile:
         lines = csv.reader(csvfile, delimiter=',', quotechar='"')
         for row in lines:
             try:

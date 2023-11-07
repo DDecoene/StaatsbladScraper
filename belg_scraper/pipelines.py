@@ -6,8 +6,8 @@
 
 import scrapy
 from scrapy import signals
-from scrapy.conf import settings
-from scrapy.contrib.exporter import CsvItemExporter
+from scrapy import settings
+from scrapy.exporters import CsvItemExporter
 import csv
 import re
 
