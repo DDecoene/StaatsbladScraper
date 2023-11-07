@@ -41,7 +41,7 @@ def main(argv):
                 int(row[0])
                 os.system("scrapy crawl tsv -a postkode={} -a van={} -a tot={}".format(row[0],d_from,d_to))
             except:
-                print "Excelp"
+                print("Excelp")
 
 if __name__ == "__main__":
     main(sys.argv[1:])

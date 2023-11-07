@@ -73,6 +73,6 @@ class tsvSpider(CrawlSpider):
             item['city'] = sel.xpath('.//text()').extract()[3]
             item['number'] = sel.xpath('.//text()').extract()[4]
             item['date'] = sel.xpath('.//text()').extract()[6] + sel.xpath('.//text()').extract()[7]
-            print item['date']
+            print(item['date'])
             yield item
         return
