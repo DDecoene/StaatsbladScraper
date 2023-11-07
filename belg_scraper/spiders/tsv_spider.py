@@ -4,14 +4,12 @@
 #
 
 import scrapy
-from scrapy.contrib.spiders import CrawlSpider, Rule
-from scrapy.contrib.linkextractors.lxmlhtml import LxmlLinkExtractor
-from scrapy.selector import HtmlXPathSelector
+from scrapy.spiders import CrawlSpider, Rule
+from scrapy.linkextractors.lxmlhtml import LxmlLinkExtractor
 from scrapy.utils.response import get_base_url
 from scrapy.http import FormRequest, Request
 import re
 from belg_scraper.items import BelgScraperItem
-import urlparse
 import datetime
 
 
@@ -73,6 +71,6 @@ class tsvSpider(CrawlSpider):
             item['city'] = sel.xpath('.//text()').extract()[3]
             item['number'] = sel.xpath('.//text()').extract()[4]
             item['date'] = sel.xpath('.//text()').extract()[6] + sel.xpath('.//text()').extract()[7]
-            print item['date']
+            print(item['date'])
             yield item
         return
